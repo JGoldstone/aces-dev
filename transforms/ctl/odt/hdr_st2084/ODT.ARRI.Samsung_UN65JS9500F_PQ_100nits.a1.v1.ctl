@@ -137,7 +137,7 @@ void main
   outputLum[2] = L_B + (L_W - L_B) * linearCV[2];
 
   // Encode linear code values with transfer function
-    float outputCV[3] = Y_2_ST2084(outputLum);
+    float outputCV[3] = Y_2_ST2084_f3(outputLum);
 
   // Default output is full range, check if legalRange param was set to true
     if (legalRange == 1) {
